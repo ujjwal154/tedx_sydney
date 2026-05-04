@@ -1,0 +1,333 @@
+/* HERO SECTION */
+.hero {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* VIDEO */
+.hero-video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* CURVE EFFECT */
+.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 2;
+}
+
+.curve svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.curve path {
+    fill: #fff; /* match next section background */
+}
+
+/* DARK OVERLAY (for readability) */
+.hero-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* TEXT */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 30px 20px;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
+  color: #000000;
+}
+
+.about-ted {
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #ff2b2b;
+}
+
+.page-section-1 {
+  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  gap: 50px;
+  background: #ffffff;
+}
+.section-img {
+  margin-top: 76px;
+  width: 63%;
+  height: 65vh;
+}
+
+.section-img img {
+  width: 80%;
+  transform: scale(1.5);
+  height: 60vh;
+
+}
+.section-ted {
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #ff2b2b;
+}
+
+.section-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-content-inner {
+  display: flex;
+  position: relative;
+  bottom: 50px;
+  flex-direction: column;
+}
+.section-content-inner h4 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+.section-content-inner p {
+  font-weight: 500;
+  position: relative;
+  bottom: 30px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.section-ted {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000000;
+}
+
+.section-content-para {
+  font-size: 22px;
+  position: relative;
+  bottom: 80px;
+  color: #000000;
+}
+
+.section-content-btn {
+  width: fit-content;
+  padding: 10px 16px;
+  background: #ff0000;
+  color: white;
+  font-size: 19px;
+  
+}
+.section-content-btn:hover {
+  background: #e02424;
+  transition: 0.3s;
+}
+.section-content-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.event-section-content {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 45px;
+    clip-path: ellipse(100% 80% at 50% 0%);
+
+}
+
+/* 🔥 Dark overlay (very important for that look) */
+.event-section-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* Make content appear above overlay */
+.event-section-content > * {
+    position: relative;
+    bottom: 50px;
+    z-index: 2;
+}
+
+/* Heading */
+.event-join p {
+    font-size: 22px;
+    margin-bottom: 8vh;
+    font-weight: 500;
+}
+
+/* Input + Button row */
+.event-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* Input box */
+.event-label input {
+    width: 255px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+}
+
+/* Hide label (since screenshot uses placeholder style) */
+.event-label label {
+    display: none;
+}
+
+/* Button */
+.event-btn .btn {
+    padding: 18px 28px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.event-btn .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Description text */
+.event-decription p {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 2.1;
+    opacity: 0.9;
+}
+
+/*footer section */
+.site-footer {
+  margin-top: -163px;
+    background: #000;
+    color: #fff;
+    padding: 10vh 80px;
+    font-family: Arial, sans-serif;
+}
+
+/* TOP ROW */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* MENU */
+.footer-menu ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu a {
+    color: rgb(248, 0, 0);
+    margin-left: 10vh;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+    display: flex;
+    margin-right: 25vh;
+    gap: 6px;
+}
+
+.footer-social i {
+    width: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+/* MIDDLE TEXT */
+.footer-middle {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.footer-middle p {
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* BOTTOM TEXT */
+.footer-bottom {
+    text-align: center;
+    word-spacing: 8px;
+    line-height: 1.6;
+    font-size: 16px;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!-- START NAVBAR -->
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+  <div class="navbar-container">
+    
+    <!-- Logo -->
+    <h1 class="mb-0 site-logo">
+      <a href="{% url 'home' %}">
+        <img src="{% static 'img/logo.png' %}" alt="" />
+      </a>
+    </h1>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <!-- Navigation -->
+    <ul class="site-navigation" id="site-menu">
+      <li><a href="{% url 'home' %}" class="nav-link">TEDxSydney 2026: Cortex</a></li>
+      <li><a class="nav-link" href="#">About</a></li>
+      <li><a href="#" class="nav-link">Speakers</a></li>
+      <li><a class="nav-link" href="#">Stories</a></li>
+    </ul>
+
+  </div>
+</header>
+<!-- END NAVBAR-->

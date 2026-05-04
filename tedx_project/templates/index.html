@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="{% static 'videos/tedx_sydney.mp4' %}" type="video/mp4" />
+  </video>
+  <div class="curve">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+        <path d="M0,0 C480,150 960,150 1440,0 L1440,150 L0,150 Z"></path>
+    </svg>
+</div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Ideas to meet the moment</h1>
+  </div>
+</section>
+
+{% comment %} ABOUT SECTION {% endcomment %}
+
+  <section class="about">
+    <div class="about-container">
+      <p>TEDxSydney is Australia’s leading platform for the elevation of pioneering ideas, creativity and innovation to the rest of the world. </p>
+    </div>
+      <div class="about-container">
+        <p>Ideas on the TEDxSydney stage respond to the moment in time we’re living in, spark conversation, deepen understanding, and drive meaningful change..</p>
+      </div>
+
+      <div class="about-container">
+        <p>TEDxSydney is an independently organised event licensed from <span class="about-ted">TED</span>.</p> 
+      </div>
+  </section>
+
+  {% comment %} PAGE SECTION 1 {% endcomment %}
+
+  <section class="page-section-1">
+    <div class="section-img">
+      <img src="{% static 'img/sydney.png' %}" alt="TEDxSydney Stage" />
+    </div>
+    <div class="section-content">
+
+      <div class="section-content-inner">
+        <h4>Reflecting on <span class="section-ted">TEDx</span> Sydney 2025: <br>Three Horizons</h4>
+        <p>What a day! </p>
+      </div>
+
+      <div class="section-content-para">
+        <p>TEDxSydney 2025 was on Friday 9th May, at City <br> Recital Hall. The afternoon event was attended by 950 <br> curious, open-minded people to explore the theme <br> Three Horizons. </p>
+      </div>
+
+      <div class="section-content-btn">
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+
+  </section>
+
+  {% comment %} EVENT SECTION {% endcomment %}
+
+  <section class="event-section">
+
+      <div class="event-section-content" 
+          style="background-image: url('{% static 'img/events-in-sydney.png' %}'); height:60vh;">
+
+          <div class="event-join">
+            <p> Join our community </p>
+          </div>
+
+          <div class="event-input">
+            <div class="event-label">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter Address">
+            </div>
+            <div class="event-btn">
+              <button type="submit" class="btn">Join</button>
+            </div>
+          </div>
+
+          <div class="event-description">
+            <p> A tapestry of open-minded thinkers, innovators, and dreamers dedicated to fostering <br> dialogue and inspiring change through the  power of ideas. <br>
+                Sign up with your email address to receive news and updates.  </p>
+          </div>
+
+      </div>
+  </section>
+
+{% comment %} FOOTER SECTION  {% endcomment %}
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Speakers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <p>TEDxSydney takes place on the land of the Gadigal people of the Eora Nation. <br> 
+            We pay respect to Elders past and present, and extend this respect to all Aboriginal & Torres Strait Islander people.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>TEDxSydney 2025   -   Terms of Use   -   Your Privacy   -   © TEDxSydney Limited</p>
+      </div>
+
+    </div>
+  </footer>
+
+{% endblock content %}
